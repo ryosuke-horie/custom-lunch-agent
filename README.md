@@ -1,5 +1,17 @@
 # 🤖 Chat Agent Starter Kit
 
+## 試したモデル（OpenRouter）
+
+- meta-llama/llama-4-scout:free ❌ 404エラーが出てしまった
+- meta-llama/llama-4-maverick:free ❌ Function Callingに対応していなかった
+- google/gemma-3-4b-it:free ❌ Function Callingに対応していなかった
+- google/gemini-2.5-pro-exp-03-25:free ⭕️
+
+## 理解したこと
+
+- AI Gatewayはリクエストのログを確認できる。リクエストとレスポンスも確認でき、開発時に便利。
+- 設定自体も表示に簡単だった。Cloudflareのダッシュボード上で作成してサーバー側で設定することで利用可能。
+
 ![agents-header](https://github.com/user-attachments/assets/f6d99eeb-1803-4495-9c5e-3cf07a37b402)
 
 A starter template for building AI-powered chat agents using Cloudflare's Agent platform, powered by [`agents`](https://www.npmjs.com/package/agents). This project provides a foundation for creating interactive chat experiences with AI, complete with a modern UI and tool integration capabilities.
